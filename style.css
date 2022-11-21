@@ -675,4 +675,41 @@
 
     /* Profile */
 
-    /* Item */
+    /* About Us */
+    body.about {
+        background-image: url('/Assets/aboutUsBackdrop.jpeg');
+        
+    }
+
+    div.aboutSection {
+        height: 50vh;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        margin-top: 25vh;
+        margin-bottom: 20vh;
+        border-radius: 15px;
+        box-shadow: 20px 20px 10px darkred;
+    
+    }
+
+    div.textContainer > * {
+        text-align: center;
+        padding: 0px 50px 0px 50px;
+    }
+
+    div.textContainer > h1 {
+        font-weight: 900;
+        font-size: 50px
+    }
+
+    div.textContainer > h2 {
+        font-weight: 300;
+        font-size: 22px;
+    }
+
+    body.about > footer {
+        box-shadow: none;
+    }
