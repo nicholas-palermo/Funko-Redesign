@@ -1,53 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icon Script -->
+    <script src="https://kit.fontawesome.com/758c54b775.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900">
     <!-- Title -->
     <title>POP! | Checkout</title>
 </head>
-    <body>
-        <!-- Header with Navbar -->
-        <header>
-            <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top navbarScroll">
-                <div class="container">
-                    <a class="navbar-brand" href="#">POP!</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="Home.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="About.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Products.html">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Cart.html">Cart</a>
-                            </li>
-                        </ul>
+
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top navbarScroll">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav col-4 left">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Products.html">Products</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav col-4 center">
+                        <a class="navbar-brand" href="/Home.html">
+                            <img class="brandLogo" src="/Assets/Funko_Logo_White.png" alt="">
+                        </a>
+                    </ul>
+                    <ul class="navbar-nav col-4 right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Profile.html">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Cart.html">
+                                <i class="shoppingBag fa-solid fa-bag-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="checkout container">
+        <div class="row">
+            <div class="checkoutHeading">
+                <h1>Complete Your Order</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="row checkoutSection shippingInfo">
+                    <h2>Shipping</h2>
+                    <form class="shippingInfoForm" action="submit">
+                        <input type="text" id="firstName" name="firstName" required placeholder="First Name*">
+                        <input type="text" id="lastName" name="lastName" required placeholder="Last Name*">
+                        <br />
+                        <input type="text" id="address1" name="address1" required placeholder="Address 1*">
+                        <br />
+                        <input type="text" id="address2" name="address2" placeholder="Address 2*">
+                        <br />
+                        <input type="text" id="zip" name="zip" required placeholder="Zip Code*" maxlength="5">
+                        <input type="text" id="city" name="city" required placeholder="City*">
+                        <input type="text" id="state" name="state" required placeholder="State*" maxlength="2">
+                        <br />
+                        <input type="tel" id="phoneNum" name="phoneNum" required placeholder="Phone Number*">
+                        <br />
+                        <div class="inputContainer">
+                            <input type="checkbox" id="saveAddress" name="saveAddress">
+                            <label for="saveAddress">Save this address and phone number to my profile.</label>
+                        </div>
+                        <hr />
+                        <h3>Gift Order</h3>
+                        <div class="inputContainer">
+                            <input type="checkbox" id="giftOrder" name="giftOrder" style="border: 1px solid red;">
+                            <label for="giftOrder">This order is a gift.</label>
+                        </div>
+
+                        <hr />
+                        <h3>Choose a Delivery Method</h3>
+                        <div class="inputContainer row">
+                            <div class="col-10">
+                                <input type="radio" id="standard" name="shippingMethod">
+                                <label for="standard">U.S. Standard</label>
+                                <p class="shippingTypeDetails">Currently 5-7 business days, unless otherwise noted.</p>
+                            </div>
+                            <div class="col-2">
+                                <h4 class="shippingPrice">FREE</h4>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="inputContaine row">
+                            <div class="col-10">
+                                <input type="radio" id="twoDayExpress" name="shippingMethod">
+                                <label for="twoDayExpress">U.S. 2-Day Express</label>
+                                <p class="shippingTypeDetails">2 business days, if ordered by 10 AM Pacific.</p>
+                            </div>
+                            <div class="col-2">
+                                <h4 class="shippingPrice">$8.99</h4>
+                            </div>
+
+                        </div>
+                        <hr />
+                        <div class="inputContainer row">
+                            <div class="col-10">
+                                <input type="radio" id="nextDayExpress" name="shippingMethod">
+                                <label for="nextDayExpress">U.S. Next Day Express</label>
+                                <p class="shippingTypeDetails">Next business day, if ordered by 10 AM Pacific.</p>
+                            </div>
+                            <div class="col-2">
+                                <h4 class="shippingPrice">$16.99</h4>
+                            </div>
+                        </div>
+                        <hr />
+
+
+                    </form>
+                </div>
+
+                <div class="row checkoutSection paymentInfo">
+                    <h2>Payment Method</h2>
+                    <div class="savedCards">
+                        <div id="card1" class="creditCard">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <p>** 4321</p>
+                        </div>
+                        <div id="card2" class="creditCard">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <p>** 1234</p>
+                        </div>
+                        <div id="card3" class="creditCard">
+                            <i class="fa-brands fa-cc-amex"></i>
+                            <p>** 5555</p>
+                        </div>
+                        <div id="card4" class="creditCard">
+                            <i class="fa-brands fa-cc-discover"></i>
+                            <p>** 6789</p>
+                        </div>
+                        <button class="newCard">
+                            <i class="fa-regular fa-square-plus"></i>
+                            <p>New Card</p>
+                        </button>
                     </div>
                 </div>
-            </nav>
-        </header>
 
+                <div class="row checkoutSection billingInfo">
+                    <h2>Billing Information</h2>
 
-        <footer>
+                    <form class="billingInfoForm" action="submit">
+                        <input type="text" id="firstNameBilling" name="firstNameBilling" required
+                            placeholder="First Name*">
+                        <input type="text" id="lastNameBilling" name="lastNameBilling" required
+                            placeholder="Last Name*">
+                        <br />
+                        <input type="tel" id="phoneNumBilling" name="phoneNumBilling" required
+                            placeholder="Phone Number*">
+                        <br />
+                        <input type="email" id="emailBilling" name="emailBilling" required placeholder="Email Address*">
 
-        </footer>
+                    </form>
+                </div>
 
-        <!-- Bootstrap Script -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    </body>
+            </div>
+            <div class="col-4">
+                <div class="orderSummary">
+                    <div class="row orderSummaryHeader">
+                        <h2>Order Summary</h2>
+                    </div>
+                    <hr />
+                    <div class="row orderSummaryInfo">
+                        <div class="col-8 orderSummaryInfoLabels">
+                            <h3>Subtotal</h3>
+                            <h3>Est. Shipping</h3>
+                            <h3>Est. Sales Tax</h3>
+                        </div>
+                        <div class="col-4 orderSummaryInfoTotals">
+                            <h3>$140.98</h3>
+                            <h3>$0.00</h3>
+                            <h3>—</h3>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row orderSummaryTotal">
+                        <div class="col-8 orderSummaryTotalLabel">
+                            <h3>Total</h3>
+                        </div>
+                        <div class="col-4 orderSummaryTotalTotal">
+                            <h3>$153.49</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row placeOrderButtonContainer">
+                    <a class="placeOrderButton" href="/Home.html">Place Order</a>
+                    <p class="disclaimer">By clicking the Place Order, I agree to the Funko™ <span
+                            class="underline">Terms of Service</span> as well as the <span class="underline">Terms of
+                            Sale</span>.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section-->
+    <footer class="footer row">
+        <div class="col-2">
+            <img class="footerLogo" src="/Assets/Funko_Logo_White.png" alt="">
+        </div>
+        <div class="col-8">
+            <a href="https://www.instagram.com/originalfunko/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/originalfunko" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/OriginalFunko" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCiBxZWamaDdlemljJ3aGPZQ" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        <div class="col-2">
+            <p>© Funko. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

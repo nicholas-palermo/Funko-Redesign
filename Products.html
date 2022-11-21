@@ -1,465 +1,2234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <!-- Title -->
-    <title>POP! | Products</title>
-</head>
-    <body>
-        <!-- Header with Navbar -->
-        <header>
-            <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top navbarScroll">
-                <div class="container">
-                    <a class="navbar-brand" href="#">POP!</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="Home.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="About.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Products.html">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Cart.html">Cart</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
 
-        <!-- Content -->
-        <div class="products container">
-            <div class="header row">
-                <p>Shop</p>
-                <h1>All Products</h1>
-            </div>
-            <div class= "productsContent row">
-                <!-- Filters -->
-                <div class="col-2">
-                    <h2>Filters</h2>
-                    <div id="filters-fandom" class="filterType row">
-                        <h3>Fandom</h3>
-                        <div class="filterOptions">
-                            <input type="checkbox" id="fandom1" name="fandom1" value="DC">
-                            <label for="fandom1">DC</label><br>
-                            <input type="checkbox" id="fandom2" name="fandom2" value="Disney">
-                            <label for="fandom2">Disney</label><br>
-                            <input type="checkbox" id="fandom3" name="fandom3" value="Marvel">
-                            <label for="fandom3">Marvel</label><br>
-                            <input type="checkbox" id="fandom4" name="fandom4" value="StarWars">
-                            <label for="fandom4">Star Wars</label><br>
-                        </div>
-                    </div>
-                    <div id="filters-productType" class="filterType row">
-                        <h3>Product Type</h3>
-                        <div class="filterOptions">
-                            <input type="checkbox" id="productType1" name="productType1" value="Pop!">
-                            <label for="fandom1">DC</label><br>
-                            <input type="checkbox" id="productType2" name="productType2" value="Pop! & Pin">
-                            <label for="productType2">Disney</label><br>
-                            <input type="checkbox" id="productType3" name="productType3" value="Pop! Pins">
-                            <label for="productType3">Marvel</label><br>
-                            <input type="checkbox" id="productType4" name="productType4" value="Pop! Deluxe">
-                            <label for="productType4">Star Wars</label><br>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                </div>
-                <!-- Products -->
-                <div class="col-10">
-                    <!-- Results and Sorting -->
-                    <div class="row">
-                        <div class="resultsCount col-9">
-                            <p>(351) results</p>
-                        </div>
-                        <div class="sortBy col-3">
-                            <select id="sortBy" name="sortBy">
-                                <option value="featured">Featured</option>
-                                <option value="name-AZ">Name: A-Z</option>
-                                <option value="name-ZA">Name: Z-A</option>
-                                <option value="price-LowHigh">Price: Low to High</option>
-                                <option value="price-HighLow">Price: High to Low</option>
-                              </select>
-                        </div>
-                    </div>
-                    
-                    <!-- Product Row 1 -->
-                    <div id="row1" class="row">
-                        <!-- Column 1 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 2 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 3 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 4 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <!-- Product Row 2 -->
-                     <div id="row2" class="row">
-                        <!-- Column 1 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 2 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 3 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 4 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <!-- Product Row 3 -->
-                     <div id="row3" class="row">
-                        <!-- Column 1 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 2 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 3 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 4 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <!-- Product Row 4 -->
-                     <div id="row4" class="row">
-                        <!-- Column 1 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 2 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 3 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 4 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <!-- Product Row 1 -->
-                     <div class="row">
-                        <!-- Column 1 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 2 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 3 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 4 -->
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                  <div class="productImage">
-                                    <img src="/Assets/disney/anna_582/anna_582_pop&pin.png" alt="Anna - 582 POP with Pin!">
-                                </div>
-                                  <div class="productInfo">
-                                    <h3>POP!</h3>
-                                    <h3>Anna (Gold) with Pin</h3>
-                                    <h4>Ultimate Princess Collection</h4>
-                                    <h5>$15.00</h5>
-                                  </div>
-                                  <button class="addToCart">Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Bootstrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icon Script -->
+  <script src="https://kit.fontawesome.com/758c54b775.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900">
+  <!-- Title -->
+  <title>POP! | Products</title>
+</head>
+
+<body>
+  <!-- Header with Navbar -->
+  <header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top navbarScroll">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav col-4 left">
+            <li class="nav-item active">
+              <a class="nav-link" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Products.html">Products</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav col-4 center">
+            <a class="navbar-brand" href="/Home.html">
+              <img class="brandLogo" src="/Assets/Funko_Logo_White.png" alt="">
+            </a>
+          </ul>
+          <ul class="navbar-nav col-4 right">
+            <li class="nav-item">
+              <a class="nav-link" href="Profile.html">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Cart.html">
+                <i class="shoppingBag fa-solid fa-bag-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <div class="products container">
+    <div class="header row">
+      <p>Shop</p>
+      <h1>All Products</h1>
+    </div>
+    <div class="productsContent row">
+      <!-- Filters -->
+      <div class="col-2">
+        <h2>Filters</h2>
+        <div id="filters-fandom" class="filterType row">
+          <h3>Fandom</h3>
+          <div class="filterOptions">
+            <input type="checkbox" id="fandom1" name="fandom1" value="DC">
+            <label for="fandom1">DC</label><br>
+            <input type="checkbox" id="fandom2" name="fandom2" value="Disney">
+            <label for="fandom2">Disney</label><br>
+            <input type="checkbox" id="fandom3" name="fandom3" value="Marvel">
+            <label for="fandom3">Marvel</label><br>
+            <input type="checkbox" id="fandom4" name="fandom4" value="StarWars">
+            <label for="fandom4">Star Wars</label><br>
+          </div>
+        </div>
+        <div id="filters-productType" class="filterType row">
+          <h3>Product Type</h3>
+          <div class="filterOptions">
+            <input type="checkbox" id="productType1" name="productType1" value="Pop!">
+            <label for="fandom1">POP!</label><br>
+            <input type="checkbox" id="productType2" name="productType2" value="Pop! & Pin">
+            <label for="productType2">POP! & Pin</label><br>
+            <input type="checkbox" id="productType3" name="productType3" value="Pop! Moments">
+            <label for="productType3">POP! Moments</label><br>
+            <input type="checkbox" id="productType4" name="productType4" value="Pop! Artist Series">
+            <label for="productType4">POP! Artist Series</label><br>
+            <input type="checkbox" id="productType5" name="productType5" value="Pop! Deluxe">
+            <label for="productType4">POP! Deluxe</label><br>
+          </div>
         </div>
 
-        <!-- Bootstrap Script -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    </body>
+
+
+      </div>
+      <!-- Products -->
+      <div class="col-10">
+        <!-- Results and Sorting -->
+        <div class="row">
+          <div class="resultsCount col-9">
+            <p>(100) results</p>
+          </div>
+          <div class="sortBy col-3">
+            <select id="sortBy" name="sortBy">
+              <option value="featured">Featured</option>
+              <option value="name-AZ">Name: A-Z</option>
+              <option value="name-ZA">Name: Z-A</option>
+              <option value="price-LowHigh">Price: Low to High</option>
+              <option value="price-HighLow">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Product Row 1 -->
+        <div id="row1" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/alohaMickeyMouse_1307/pop.png">
+                  <img class="img-off" src="/Assets/disney/alohaMickeyMouse_1307/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Aloha Mickey Mouse</h3>
+                  </div>
+                  <h5>Walt Disney World 50th</h5>
+                  <h6>$12.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/buzzLightyear_1230/pop.jpg">
+                  <img class="img-off" src="/Assets/disney/buzzLightyear_1230/box.jpg">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Buzz Lightyear (Space Ranger Alpha)</h3>
+                  </div>
+                  <h5>Lightyear</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/annaWithPin_582/pop.png">
+                  <img class="img-off" src="/Assets/disney/annaWithPin_582/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! & Pin</h4>
+                  <div class="row">
+                    <h3>Anna (Gold) with Pin</h3>
+                  </div>
+                  <h5>Ultimate Princess Collection</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/belleWithPin_221/pop.png">
+                  <img class="img-off" src="/Assets/disney/belleWithPin_221/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Belle (Gold) with Pin</h3>
+                  </div>
+                  <h5>Ultimate Princess Collection</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 2 -->
+        <div id="row2" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/captainHook-BlackLight-1081/pop.png">
+                  <img class="img-off" src="/Assets/disney/captainHook-BlackLight-1081/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Captain Hook (Black Light)</h3>
+                  </div>
+                  <h5>Disney Villains</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/cinderellaWithPin_222/pop.png">
+                  <img class="img-off" src="/Assets/disney/cinderellaWithPin_222/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! & Pin</h4>
+                  <div class="row">
+                    <h3>Cinderella (Gold) with Pin</h3>
+                  </div>
+                  <h5>Ultimate Princess Collection</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/classicMerida_1245/pop.png">
+                  <img class="img-off" src="/Assets/disney/classicMerida_1245/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Classic Merida</h3>
+                  </div>
+                  <h5>Brave</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/drFacilier-BlackLight_1084/pop.png">
+                  <img class="img-off" src="/Assets/disney/drFacilier-BlackLight_1084/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Dr. Facilier (Black Light)</h3>
+                  </div>
+                  <h5>Disney Villains</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 3 -->
+        <div id="row3" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/elsaWithPin_581/pop.png">
+                  <img class="img-off" src="/Assets/disney/elsaWithPin_581/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! & Pin</h4>
+                  <div class="row">
+                    <h3>Elsa (Gold) with Pin</h3>
+                  </div>
+                  <h5>Ultimate Princess Collection</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/evilQueenOnThrone_1088/pop.png">
+                  <img class="img-off" src="/Assets/disney/evilQueenOnThrone_1088/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Deluxe</h4>
+                  <div class="row">
+                    <h3>Evil Queen on Throne</h3>
+                  </div>
+                  <h5>Disney Villains</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/hadesWithPainAndPanic_1203/pop.png">
+                  <img class="img-off" src="/Assets/disney/hadesWithPainAndPanic_1203/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Deluxe</h4>
+                  <div class="row">
+                    <h3>Hades with Pain and Panic</h3>
+                  </div>
+                  <h5>Disney Villains: Villains Assemble</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/jiminyCricket_1233/pop.png">
+                  <img class="img-off" src="/Assets/disney/jiminyCricket_1233/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Jiminy Cricket </h3>
+                  </div>
+                  <h5>Disney Classics</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 4 -->
+        <div id="row4" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/jose_1308/pop.png">
+                  <img class="img-off" src="/Assets/disney/jose_1308/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Jose from Enchanted Tiki Room</h3>
+                  </div>
+                  <h5>Walt Disney World 50th</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/lilo&StitchInHammock_1200/pop.png">
+                  <img class="img-off" src="/Assets/disney/lilo&StitchInHammock_1200/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Moments</h4>
+                  <div class="row">
+                    <h3>Lilo and Stitch in Hammock</h3>
+                  </div>
+                  <h5>Disney</h5>
+                  <h6>$35.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/maleficent-BlackLight_1082/pop.png">
+                  <img class="img-off" src="/Assets/disney/maleficent-BlackLight_1082/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Maleficent (Black Light)</h3>
+                  </div>
+                  <h5>Disney Villains</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/meridaWithPin_324/pop.png">
+                  <img class="img-off" src="/Assets/disney/meridaWithPin_324/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! & Pin</h4>
+                  <div class="row">
+                    <h3>Merida (Gold) with Pin</h3>
+                  </div>
+                  <h5>Ultimate Princess Collection</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 5 -->
+        <div id="row5" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/mickeyHTH_31/pop.png">
+                  <img class="img-off" src="/Assets/disney/mickeyHTH_31/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Town</h4>
+                  <div class="row">
+                    <h3>Hollywood Tower Hotel & Mickey Mouse</h3>
+                  </div>
+                  <h5>Walt Disney World 50th</h5>
+                  <h6>$45.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/minnieMouseOnCarousel_1251/pop.png">
+                  <img class="img-off" src="/Assets/disney/minnieMouseOnCarousel_1251/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Minnie Mouse on Carousel</h3>
+                  </div>
+                  <h5>Walt Disney World 50th</h5>
+                  <h6>$12.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/moanaWithPin_1162/pop.png">
+                  <img class="img-off" src="/Assets/disney/moanaWithPin_1162/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! & Pin</h4>
+                  <div class="row">
+                    <h3>Moana (Gold) with Pin</h3>
+                  </div>
+                  <h5>Ultimate Princess Collection</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/mulanWithPin_323/pop.png">
+                  <img class="img-off" src="/Assets/disney/mulanWithPin_323/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! & Pin</h4>
+                  <div class="row">
+                    <h3>Mulan (Gold) with Pin</h3>
+                  </div>
+                  <h5>Ultimate Princess Collection</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 6 -->
+        <div id="row6" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/nightmareBeforeChristmas-5-pack/pop.png">
+                  <img class="img-off" src="/Assets/disney/nightmareBeforeChristmas-5-pack/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Nightmare Before Christmas 5-Pack</h3>
+                  </div>
+                  <h5>The Nightmare Before Christmas</h5>
+                  <h6>$60.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/philharmagicMickeyMouse_1167/pop.png">
+                  <img class="img-off" src="/Assets/disney/philharmagicMickeyMouse_1167/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Philharmagic Mickey Mouse</h3>
+                  </div>
+                  <h5>Walt Disney World 50th</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/pilotMickeyMouse_1232/pop.png">
+                  <img class="img-off" src="/Assets/disney/pilotMickeyMouse_1232/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Pilot Mickey Mouse</h3>
+                  </div>
+                  <h5>Disney</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/pocahontasWithPin_1077/pop.png">
+                  <img class="img-off" src="/Assets/disney/pocahontasWithPin_1077/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! & Pin</h4>
+                  <div class="row">
+                    <h3>Pocahantas (Gold) with Pin</h3>
+                  </div>
+                  <h5>Ultimate Princess Collection</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 7 -->
+        <div id="row7" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/remy_1209/pop.png">
+                  <img class="img-off" src="/Assets/disney/remy_1209/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Deluxe</h4>
+                  <div class="row">
+                    <h3>Remy</h3>
+                  </div>
+                  <h5>Ratatouille</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/repunzelWithPin_223/pop.png">
+                  <img class="img-off" src="/Assets/disney/repunzelWithPin_223/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! & Pin</h4>
+                  <div class="row">
+                    <h3>Repunzel (Gold) with Pin</h3>
+                  </div>
+                  <h5>Ultimate Princess Collection</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/rogerRabbit_1270/pop.jpg">
+                  <img class="img-off" src="/Assets/disney/rogerRabbit_1270/box.jpg">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Roger Rabbit</h3>
+                  </div>
+                  <h5>Disney Classics</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/scarWithHyenas_1204/pop.png">
+                  <img class="img-off" src="/Assets/disney/scarWithHyenas_1204/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Deluxe</h4>
+                  <div class="row">
+                    <h3>Scar with Hyenas</h3>
+                  </div>
+                  <h5>Disney Villains: Villains Assemble</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 8 -->
+        <div id="row8" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/smeeWSkullRock_32/pop.jpg">
+                  <img class="img-off" src="/Assets/disney/smeeWSkullRock_32/box.jpg">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Town</h4>
+                  <div class="row">
+                    <h3>Smee with Skull Rock</h3>
+                  </div>
+                  <h5>Disney Classics</h5>
+                  <h6>$45.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/stitchInCuffs_1235/pop.png">
+                  <img class="img-off" src="/Assets/disney/stitchInCuffs_1235/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Stitch in Cuffs</h3>
+                  </div>
+                  <h5>Lilo & Stitch</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/thackeryBinx_1247/pop.jpg">
+                  <img class="img-off" src="/Assets/disney/thackeryBinx_1247/box.jpg">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Thackery Binx</h3>
+                  </div>
+                  <h5>Hocus Pocus</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/disney/ursulaOnThrone_1089/pop.png">
+                  <img class="img-off" src="/Assets/disney/ursulaOnThrone_1089/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Deluxe</h4>
+                  <div class="row">
+                    <h3>Ursula on Throne</h3>
+                  </div>
+                  <h5>Disney Villains</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 9 -->
+        <div id="row9" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/ammit_1052/pop.png">
+                  <img class="img-off" src="/Assets/marvel/ammit_1052/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Ammit</h3>
+                  </div>
+                  <h5>Moon Knight</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/attuma_1096/pop.png">
+                  <img class="img-off" src="/Assets/marvel/attuma_1096/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Attuma</h3>
+                  </div>
+                  <h5>Black Panther: Wakanda Forever</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/blackPanther_1102/pop.png">
+                  <img class="img-off" src="/Assets/marvel/blackPanther_1102/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Black Panther</h3>
+                  </div>
+                  <h5>Black Panther: Wakanda Forever</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/blackPanther_70/pop.png">
+                  <img class="img-off" src="/Assets/marvel/blackPanther_70/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Artist Series</h4>
+                  <div class="row">
+                    <h3>Black Panther with POP! Protector</h3>
+                  </div>
+                  <h5>Black Panther</h5>
+                  <h6>$25.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 10 -->
+        <div id="row10" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/drax-Holiday_1106/pop.png">
+                  <img class="img-off" src="/Assets/marvel/drax-Holiday_1106/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Holiday Drax</h3>
+                  </div>
+                  <h5>Guardians of the Galaxy</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/groot_1116/pop.png">
+                  <img class="img-off" src="/Assets/marvel/groot_1116/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Groot</h3>
+                  </div>
+                  <h5>I Am Groot</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/hercules_1061/pop.png">
+                  <img class="img-off" src="/Assets/marvel/hercules_1061/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Hercules</h3>
+                  </div>
+                  <h5>Thor: Love and Thunder</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/ironheartMK1-1095/pop.png">
+                  <img class="img-off" src="/Assets/marvel/ironheartMK1-1095/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Ironheart MK1</h3>
+                  </div>
+                  <h5>Black Panther: Wakanda Forever</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 11 -->
+        <div id="row11" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/jennifer_1128/pop.png">
+                  <img class="img-off" src="/Assets/marvel/jennifer_1128/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Jennifer Walters</h3>
+                  </div>
+                  <h5>She-Hulk</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/kamran_1108/pop.png">
+                  <img class="img-off" src="/Assets/marvel/kamran_1108/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Kamran</h3>
+                  </div>
+                  <h5>Ms. Marvel</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/lokiAndSylvie_1065/pop.png">
+                  <img class="img-off" src="/Assets/marvel/lokiAndSylvie_1065/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Moments</h4>
+                  <div class="row">
+                    <h3>Loki & Sylvie</h3>
+                  </div>
+                  <h5>Loki</h5>
+                  <h6>$35.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/mantis-Holiday_1107/pop.png">
+                  <img class="img-off" src="/Assets/marvel/mantis-Holiday_1107/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Holiday Mantis</h3>
+                  </div>
+                  <h5>Guardians of The Galaxy</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 12 -->
+        <div id="row12" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/mBaku_67/pop.png">
+                  <img class="img-off" src="/Assets/marvel/mBaku_67/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Artist Series</h4>
+                  <div class="row">
+                    <h3>M'Baku with POP! Protector</h3>
+                  </div>
+                  <h5>Black Panther</h5>
+                  <h6>$25.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/mrKnight-Glow-1048/pop.png">
+                  <img class="img-off" src="/Assets/marvel/mrKnight-Glow-1048/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Mr. Knight (Glow)</h3>
+                  </div>
+                  <h5>Moon Knight</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/msMarvel_1084/pop.png">
+                  <img class="img-off" src="/Assets/marvel/msMarvel_1084/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Ms. Marvel on stepping stones</h3>
+                  </div>
+                  <h5>Ms. Marvel</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/nakia_1110/pop.png">
+                  <img class="img-off" src="/Assets/marvel/nakia_1110/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Nakia</h3>
+                  </div>
+                  <h5>Black Panther</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 13 -->
+        <div id="row13" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/nakia_68/pop.png">
+                  <img class="img-off" src="/Assets/marvel/nakia_68/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Artist Series</h4>
+                  <div class="row">
+                    <h3>Nakia with POP! Protector</h3>
+                  </div>
+                  <h5>Black Panther</h5>
+                  <h6>$25.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/namor_1094/pop.png">
+                  <img class="img-off" src="/Assets/marvel/namor_1094/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Namor</h3>
+                  </div>
+                  <h5>Black Panther: Wakanda Forever</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/namora_1097/pop.png">
+                  <img class="img-off" src="/Assets/marvel/namora_1097/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Namora</h3>
+                  </div>
+                  <h5>Black Panther: Wakanda Forever</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/nickFury-SecretInvasion_1115/pop.png">
+                  <img class="img-off" src="/Assets/marvel/nickFury-SecretInvasion_1115/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Nick Fury</h3>
+                  </div>
+                  <h5>Secret Invasion!</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 14 -->
+        <div id="row14" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/okaye_1100/pop.png">
+                  <img class="img-off" src="/Assets/marvel/okaye_1100/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Okaye</h3>
+                  </div>
+                  <h5>Black Panther: Wakanda Forever</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/queenRamonda-1099/pop.png">
+                  <img class="img-off" src="/Assets/marvel/queenRamonda-1099/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Queen Ramonda</h3>
+                  </div>
+                  <h5>Black Panther: Wakanda Forever</h5>
+                  <h6>$12.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/ramonda_1111/pop.png">
+                  <img class="img-off" src="/Assets/marvel/ramonda_1111/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Ramonda</h3>
+                  </div>
+                  <h5>Black Panther</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/scarletWitch-BlackLight_986/pop.png">
+                  <img class="img-off" src="/Assets/marvel/scarletWitch-BlackLight_986/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Scarlet Witch (Black Light)</h3>
+                  </div>
+                  <h5>WandaVision</h5>
+                  <h6>$17.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 15 -->
+        <div id="row15" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/shuri_69/pop.png">
+                  <img class="img-off" src="/Assets/marvel/shuri_69/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Shuri With POP! Protector</h3>
+                  </div>
+                  <h5>Black Panther</h5>
+                  <h6>$25.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/shuriInSunbird-110/pop.png">
+                  <img class="img-off" src="/Assets/marvel/shuriInSunbird-110/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Rides Super Deluxe</h4>
+                  <div class="row">
+                    <h3>Shuri in Sunbird</h3>
+                  </div>
+                  <h5>Black Panther: Wakanda Forever</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/shuriInWhiteDress_1112/pop.png">
+                  <img class="img-off" src="/Assets/marvel/shuriInWhiteDress_1112/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Shuri in White Dress</h3>
+                  </div>
+                  <h5>Black Panther</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/starLord-Holiday_1104/pop.png">
+                  <img class="img-off" src="/Assets/marvel/starLord-Holiday_1104/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Holiday Starlord</h3>
+                  </div>
+                  <h5>Guardians of the Galaxy</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 16 -->
+        <div id="row16" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/tChallaOnThrone-1113/pop.png">
+                  <img class="img-off" src="/Assets/marvel/tChallaOnThrone-1113/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Deluxe</h4>
+                  <div class="row">
+                    <h3>T'Challa on Throne</h3>
+                  </div>
+                  <h5>Black Panther</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/templeOfKonshuStatue-10_1053/pop.png">
+                  <img class="img-off" src="/Assets/marvel/templeOfKonshuStatue-10_1053/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Deluxe</h4>
+                  <div class="row">
+                    <h3>Temple of Konshu Statue</h3>
+                  </div>
+                  <h5>Moon Knight</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/thorAndMightyThor-2-Pack/pop.png">
+                  <img class="img-off" src="/Assets/marvel/thorAndMightyThor-2-Pack/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Thor and Mighty Thor 2-Pack</h3>
+                  </div>
+                  <h5>Thor: Love & Thunder</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/thorLove&Thunder-4-Pack/pop.png">
+                  <img class="img-off" src="/Assets/marvel/thorLove&Thunder-4-Pack/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Thor, Mighty Thor, Valkyrie & Gorr 4-Pack</h3>
+                  </div>
+                  <h5>Thor: Love & Thunder</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 17 -->
+        <div id="row17" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/marvel/titania_1132/pop.png">
+                  <img class="img-off" src="/Assets/marvel/titania_1132/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Titania</h3>
+                  </div>
+                  <h5>She-Hulk</h5>
+                  <h6>$12.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/ashokaWithSabers_464/pop.png">
+                  <img class="img-off" src="/Assets/starWars/ashokaWithSabers_464/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Ashoka with Lightsabers</h3>
+                  </div>
+                  <h5>The Mandolorian</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/bobaFettAndFennecOnThrone_486/pop.png">
+                  <img class="img-off" src="/Assets/starWars/bobaFettAndFennecOnThrone_486/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Moments</h4>
+                  <div class="row">
+                    <h3>Boba Fett & Fennec on Throne</h3>
+                  </div>
+                  <h5>The Mandolorian</h5>
+                  <h6>$35.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/bobaFettInArmor_480/pop.png">
+                  <img class="img-off" src="/Assets/starWars/bobaFettInArmor_480/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Boba Fett in Armor</h3>
+                  </div>
+                  <h5>The Book of Boba Fett</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 18 -->
+        <div id="row18" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/cadBane_580/pop.png">
+                  <img class="img-off" src="/Assets/starWars/cadBane_580/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Cad Bane</h3>
+                  </div>
+                  <h5>The Book of Boba Fett</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/cassianAndor_534/pop.png">
+                  <img class="img-off" src="/Assets/starWars/cassianAndor_534/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Cassian Andor</h3>
+                  </div>
+                  <h5>Andor</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/cobbVanth_484/pop.png">
+                  <img class="img-off" src="/Assets/starWars/cobbVanth_484/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Cobb Vanth</h3>
+                  </div>
+                  <h5>The Mandolorian</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/darthMaul-Glow_520/pop.png">
+                  <img class="img-off" src="/Assets/starWars/darthMaul-Glow_520/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Deluxe</h4>
+                  <div class="row">
+                    <h3>Darth Maul (Glow)</h3>
+                  </div>
+                  <h5>Star Wars - Red Saber Series Vol. 1</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 19 -->
+        <div id="row19" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/darthSidious-Glow_519/pop.png">
+                  <img class="img-off" src="/Assets/starWars/darthSidious-Glow_519/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Deluxe</h4>
+                  <div class="row">
+                    <h3>Darth Sidious (Glow)</h3>
+                  </div>
+                  <h5>Star Wars - Red Saber Series: Vol. 1</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/darthVader-Bespin_518/pop.png">
+                  <img class="img-off" src="/Assets/starWars/darthVader-Bespin_518/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Artist Series</h4>
+                  <div class="row">
+                    <h3>Darth Vader (Bespin) with POP! Protector</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$25.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/darthVader-Endor_517/pop.png">
+                  <img class="img-off" src="/Assets/starWars/darthVader-Endor_517/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Artist Series</h4>
+                  <div class="row">
+                    <h3>Darth Vader (Endor) with POP! Protector</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$25.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/darthVader-Hoth_516/pop.png">
+                  <img class="img-off" src="/Assets/starWars/darthVader-Hoth_516/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Artist Series</h4>
+                  <div class="row">
+                    <h3>Darth Vader (Hoth) with POP! Protector</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$25.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 20 -->
+        <div id="row20" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/darthVader-Mustafar_515/pop.png">
+                  <img class="img-off" src="/Assets/starWars/darthVader-Mustafar_515/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Artist Series</h4>
+                  <div class="row">
+                    <h3>Darth Vader (Mustafar) with POP! Protector</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$25.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/darthVader_509/pop.png">
+                  <img class="img-off" src="/Assets/starWars/darthVader_509/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Darth Vader</h3>
+                  </div>
+                  <h5>Star Wars Celebration</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/darthVader_535/pop.png">
+                  <img class="img-off" src="/Assets/starWars/darthVader_535/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Artist Series</h4>
+                  <div class="row">
+                    <h3>Darth Vader with POP! Protector</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$25.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/darthVader_543/pop.png">
+                  <img class="img-off" src="/Assets/starWars/darthVader_543/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Darth Vader with Light Saber</h3>
+                  </div>
+                  <h5>Obi-Wan Kenobi</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 21 -->
+        <div id="row21" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/groguWithArmor_584/pop.png">
+                  <img class="img-off" src="/Assets/starWars/groguWithArmor_584/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Grogu with Armor</h3>
+                  </div>
+                  <h5>The Book of Boba Fett</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/hajaEstree_545/pop.png">
+                  <img class="img-off" src="/Assets/starWars/hajaEstree_545/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Haja Estree</h3>
+                  </div>
+                  <h5>Obi-Wan Kenobi</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/holidaySnowman-5-Pack/pop.png">
+                  <img class="img-off" src="/Assets/starWars/holidaySnowman-5-Pack/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Star Wars Holiday Snowman 5-Pack</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$60.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/imperialRocketTrooper_552/pop.png">
+                  <img class="img-off" src="/Assets/starWars/imperialRocketTrooper_552/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Imperial Rocket Trooper</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 22 -->
+        <div id="row22" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/jynErso_555/pop.png">
+                  <img class="img-off" src="/Assets/starWars/jynErso_555/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Jyn Erso</h3>
+                  </div>
+                  <h5>Rogue One: A Star Wars Story</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/krrsantan_581/pop.png">
+                  <img class="img-off" src="/Assets/starWars/krrsantan_581/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Krrsantan</h3>
+                  </div>
+                  <h5>The Book of Boba Fett</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/kyloRen-LightsAndSound_308/pop.png">
+                  <img class="img-off" src="/Assets/starWars/kyloRen-LightsAndSound_308/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Kylo Ren (Lights & Sound)</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/lukeSkywalkerWithGrogu_482/pop.png">
+                  <img class="img-off" src="/Assets/starWars/lukeSkywalkerWithGrogu_482/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Luke Skywalker with Grogu</h3>
+                  </div>
+                  <h5>The Mandolorian</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 23 -->
+        <div id="row23" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/lukeSkywalkerWithYoda_363/pop.png">
+                  <img class="img-off" src="/Assets/starWars/lukeSkywalkerWithYoda_363/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Luke Skywalker with Yoda</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/mandolorianWBeskarStaff_479/pop.png">
+                  <img class="img-off" src="/Assets/starWars/mandolorianWBeskarStaff_479/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>The Mandolorian with Beskar Staff</h3>
+                  </div>
+                  <h5>The Mandolorian</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/obiWanKenobi-5-Pack/pop.png">
+                  <img class="img-off" src="/Assets/starWars/obiWanKenobi-5-Pack/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Star Wars: Obi-Wan Kenobi 5-Pack</h3>
+                  </div>
+                  <h5>Obi-Wan Kenobi</h5>
+                  <h6>$60.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/obiWanKenobi-DuelOfTheFates_507/pop.png">
+                  <img class="img-off" src="/Assets/starWars/obiWanKenobi-DuelOfTheFates_507/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Deluxe</h4>
+                  <div class="row">
+                    <h3>Duel of the Fates: Obi-Wan Kenobi</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 24 -->
+        <div id="row24" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/obiWanKenobi_270/pop.png">
+                  <img class="img-off" src="/Assets/starWars/obiWanKenobi_270/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Obi-Wan Kenobi</h3>
+                  </div>
+                  <h5>Star Wars: The Clone Wars</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/obiWanKenobi_536/pop.png">
+                  <img class="img-off" src="/Assets/starWars/obiWanKenobi_536/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Artist Series</h4>
+                  <div class="row">
+                    <h3>Obi-Wan Kenobi with POP! Protector</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$25.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/obiWanKenobiOnEopie_549/pop.png">
+                  <img class="img-off" src="/Assets/starWars/obiWanKenobiOnEopie_549/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Deluxe</h4>
+                  <div class="row">
+                    <h3>Obi-Wan Kenobi on Eopie</h3>
+                  </div>
+                  <h5>Obi-Wan Kenobi</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/padmeAmidala_525/pop.png">
+                  <img class="img-off" src="/Assets/starWars/padmeAmidala_525/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Padme Amidala</h3>
+                  </div>
+                  <h5>Star Wars: Power of the Galaxy</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Row 25 -->
+        <div id="row25" class="row">
+          <!-- Column 1 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/princessLeia_Yavin_459/pop.png">
+                  <img class="img-off" src="/Assets/starWars/princessLeia_Yavin_459/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Princess Leia (Yavin)</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/quiGonJinn-DuelOfTheFates_508/pop.png">
+                  <img class="img-off" src="/Assets/starWars/quiGonJinn-DuelOfTheFates_508/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP! Deluxe</h4>
+                  <div class="row">
+                    <h3>Duel of the Fates: Qui-Gon Jinn</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$30.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/revaThirdSister_546/pop.png">
+                  <img class="img-off" src="/Assets/starWars/revaThirdSister_546/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Reva (Third Sister)</h3>
+                  </div>
+                  <h5>Obi-Wan Kenobi</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="productImage">
+                  <img class="img-on" src="/Assets/starWars/reyWithYellowLightsaber_432/pop.png">
+                  <img class="img-off" src="/Assets/starWars/reyWithYellowLightsaber_432/box.png">
+                </div>
+                <div class="productInfo">
+                  <h4>POP!</h4>
+                  <div class="row">
+                    <h3>Rey with Yellow Lightsaber</h3>
+                  </div>
+                  <h5>Star Wars</h5>
+                  <h6>$15.00</h6>
+                </div>
+                <button class="addToCart">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- footer section-->
+  <footer class="footer row">
+    <div class="col-2">
+      <img class="footerLogo" src="/AssetsFunko_Logo_White.png" alt="">
+    </div>
+    <div class="col-8">
+      <a href="https://www.instagram.com/originalfunko/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/originalfunko" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://twitter.com/OriginalFunko" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UCiBxZWamaDdlemljJ3aGPZQ" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+    <div class="col-2">
+      <p>© Funko. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
