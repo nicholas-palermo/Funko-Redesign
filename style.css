@@ -177,19 +177,20 @@
             background-repeat: none;
             background-size: cover;
         }
+
+        div.hero-item {
+            height: 100vh;
+            width: 100vw;
+        }
         
         div.hero-item > .row {
             margin-top: 100px;
-            padding-top: 25vh;
             padding-bottom: 20vh;
-            height: 60vh;
+            height: 100%;
+            width: 100%;
             display: flex;
+            align-content: center;
             justify-content: center;
-            align-items: center;
-        }
-
-        div.hero-item > row {
-            justify-self: center;
         }
 
         img.heroImage {
@@ -722,4 +723,29 @@
 
     body.about > footer {
         box-shadow: none;
+    }
+
+/* Media Queries */
+    /* Home */
+    @media only screen and (max-width: 768px){
+        div.hero-item > .row {
+            flex-direction: column;
+        }
+
+        div.heroText-container {
+            text-align: center;
+            padding: 0 0 0 0;
+            width: 75%;
+        }
+
+        div.heroImage-container {
+            padding-top: 20px;
+            align-self: center;
+            padding-right: 0;
+            scale: 1.5;
+        }
+
+        .carouselButton {
+            scale: 0.75;
+        }
     }
