@@ -59,7 +59,7 @@
     div.productInfo > div.row {
         display: flex;
         align-items: center;
-        height: 40px;
+        height: 60px;
     }
 
     div.productInfo > div.row > h3 {
@@ -726,20 +726,23 @@
     }
 
 /* Media Queries */
-    /* Home */
+    
     @media only screen and (max-width: 768px){
+        /* Home */
         div.hero-item > .row {
             flex-direction: column;
+            margin: 0 0 0 0;
         }
 
         div.heroText-container {
             text-align: center;
             padding: 0 0 0 0;
             width: 75%;
+            scale: 0.8;
         }
 
         div.heroImage-container {
-            padding-top: 20px;
+            padding-top: 15px;
             align-self: center;
             padding-right: 0;
             scale: 1.5;
@@ -747,5 +750,24 @@
 
         .carouselButton {
             scale: 0.75;
+        }
+
+        #new-releases {
+            text-align: center;
+            padding: 40px 0px 40px 0px !important;
+            scale: 0.9;
+        }
+
+        .aboutSection {
+            scale: 1.1;
+        }
+
+        .aboutSection > div.row > h2 {
+            font-size: 14px;
+            padding: 0 20px 0 20px;
+        }
+
+        .aboutSection > div.row > h1 {
+            font-size: 25px;
         }
     }
