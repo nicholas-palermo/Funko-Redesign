@@ -505,7 +505,7 @@
             display: flex;
         }
 
-        div.creditCard {
+        button.creditCard {
             width: 90px;
             height: 60px;
             border-radius: 5px;
@@ -513,21 +513,23 @@
             margin: 0px 7px 0px 7px;
             color: white;
             font-size: 13px;
+            border: none;
+            text-align: left;
         }
 
-        div.creditCard > p {
+        button.creditCard > p {
             padding-top: 5px;
         }
 
         #card1 {
             background-color: rgb(76, 75, 96);
-            outline: 1px solid rgb(230, 230, 230);
+            outline: 2px solid rgb(95, 133, 221);
             outline-offset: 2px;
         }
 
         #card2 {
             background-color: rgb(148, 147, 150);
-            outline: 2px solid rgb(95, 133, 221);
+            outline: 1px solid rgb(230, 230, 230);
             outline-offset: 2px;
         }
 
@@ -557,12 +559,12 @@
         }
 
 
-        div.creditCard > i {
+        button.creditCard > i {
             font-size: 20px;
             color: white;
         }
 
-        div.checkoutSection {
+        fieldset.checkoutSection {
             border: 1px solid grey;
             border-radius: 15px;
             margin: 0px 25px 15px 5px;
@@ -583,18 +585,14 @@
             margin: 0px 0px 0px 0px;
         }
 
-        a.placeOrderButton {
+        input.placeOrderButton {
             background-color: rgb(95, 133, 221);
             border-radius: 12px;
             border: none;
             padding: 10px 0px 10px 0px;
             text-align: center;
             width: 100%;
-        }
-
-        a.placeOrderButton:link, a.placeOrderButton:visited {
             color: white;
-            text-decoration: none;
         }
 
         p.disclaimer {
@@ -608,11 +606,16 @@
             text-decoration: underline;
         }
 
-        .shippingInfoForm {
+        .checkoutForm {
             padding: 0px 40px 0px 40px;
         }
 
-        .shippingInfoForm > input, .shippingInfoForm > input:focus, .billingInfoForm > input, .billingInfoForm > input:focus {
+        .checkoutForm > fieldset {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .checkoutForm > fieldset > input, .checkoutForm > fieldset > input:focus, .billingInfoForm > fieldset > input, .billingInfoForm > fieldset > input:focus {
             border: none;
             border-bottom: 1px solid black;
             outline: none;
@@ -620,32 +623,39 @@
             margin-top: 15px;
         }
 
-        #firstName, #lastName, #firstNameBilling, #lastNameBilling {
-            width: 49.5%;
+        #firstName, #lastName, #firstNameBilling, #lastNameBilling, #phoneNum, #phoneNumBilling, #emailBilling {
+            width: 49%;
+        }
+
+        #firstName, #firstNameBilling, #phoneNum, #phoneNumBilling {
+            margin-right: 2%;
         }
 
         #address1, #address2 {
-            width: 99.5%;
+            width: 100%;
         }
 
         #zip {
-            width: 30%;
+            width: 23%;
+            margin-right: 2%;
         }
 
         #city {
-            width: 40%;
+            width: 48%;
+            margin-right: 2%;
         }
         
         #state {
-            width: 28.5%;
+            width: 25%;
         }
 
-        #phoneNum, #phoneNumBilling, #emailBilling {
-            width: 45%;
+        div.saveAddress {
+            display: inline;
+            margin-top: 10px;
         }
 
         div.inputContainer {
-            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
 
